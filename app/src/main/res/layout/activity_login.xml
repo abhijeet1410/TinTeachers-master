@@ -7,28 +7,39 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".LoginActivity">
-    <EditText
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/login_username"
+            android:layout_margin="10dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:id="@+id/login_username"
-        android:layout_margin="10dp"/>
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:layout_margin="10dp"
-        android:id="@+id/login_password"
-        android:inputType="textPassword"/>
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_margin="10dp"
+            android:id="@+id/login_password"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="login"/>
+        android:text="login"
+        android:onClick="login"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password"
+        android:textStyle="italic"
         android:layout_margin="10dp"
         android:textColor="#0011d1"
         android:onClick="forgotPassword"/>

@@ -20,8 +20,10 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ForgetPasswordActivity"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
