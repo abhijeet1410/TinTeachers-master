@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import com.abhijeet14.tinteachers.fragments.AboutFragment;
 import com.abhijeet14.tinteachers.fragments.AttendanceFragment;
+import com.abhijeet14.tinteachers.fragments.HelpFragment;
 import com.abhijeet14.tinteachers.fragments.HomeFragment;
 import com.abhijeet14.tinteachers.fragments.NoticeBoardFragment;
 import com.abhijeet14.tinteachers.fragments.ProfileFragment;
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity
             f = new SyllabusFragment();
         } else if (id == R.id.nav_about){
             f = new AboutFragment();
+        } else if (id == R.id.nav_help){
+            f = new HelpFragment();
         }
         ft.replace(R.id.container, f, tag);
         ft.commit();
