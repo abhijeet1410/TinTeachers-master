@@ -13,13 +13,28 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Profile" />
         <item
+            android:id="@+id/nav_students"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Students"/>
+        <item
+            android:id="@+id/nav_time_table"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Time Table"/>
+        <item
             android:id="@+id/nav_attendance"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Attendance" />
         <item
+            android:id="@+id/nav_syllabus"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Syllabus"/>
+        <item
             android:id="@+id/nav_noticeBoard"
             android:icon="@drawable/ic_menu_manage"
             android:title="Notice Board" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="About"/>
     </group>
-
 </menu>

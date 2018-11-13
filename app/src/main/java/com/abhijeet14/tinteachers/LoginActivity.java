@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onSuccess(AuthResult authResult) {
                         p.dismiss();
                         String name = authResult.getUser().getDisplayName();
-                        if (name.equals("teachers")) {
+                        if (name.equals("teacher")) {
                             startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         } else {
                             mAuth.signOut();
@@ -72,7 +72,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
-
     @Override
     protected void onStart() {
         super.onStart();
