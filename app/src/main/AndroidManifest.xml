@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.abhijeet14.tinteachers">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +28,10 @@
         <activity
             android:name=".ForgetPasswordActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".TeacherProfileActivity" />
+        <activity android:name=".AllStudentActivity" />
+        <activity android:name=".StudentProfileActivity"></activity>
     </application>
 
 </manifest>

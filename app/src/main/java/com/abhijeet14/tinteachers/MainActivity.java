@@ -23,6 +23,7 @@ import com.abhijeet14.tinteachers.fragments.NoticeBoardFragment;
 import com.abhijeet14.tinteachers.fragments.ProfileFragment;
 import com.abhijeet14.tinteachers.fragments.StudentsFragment;
 import com.abhijeet14.tinteachers.fragments.SyllabusFragment;
+import com.abhijeet14.tinteachers.fragments.TeachersFragment;
 import com.abhijeet14.tinteachers.fragments.TimeTableFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -121,6 +122,8 @@ public class MainActivity extends AppCompatActivity
             f = new AboutFragment();
         } else if (id == R.id.nav_help){
             f = new HelpFragment();
+        } else if (id == R.id.nav_teachers){
+            f = new TeachersFragment();
         }
         ft.replace(R.id.container, f, tag);
         ft.commit();
